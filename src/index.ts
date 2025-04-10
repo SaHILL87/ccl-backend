@@ -17,9 +17,9 @@ app.use(express.json());
 app.use('/api/messages', messageRoutes);
 
 // Health check endpoint
-app.get('/health', (req, res) => {
-  res.status(200).send('Server is healthy');
-});
+// app.get('/health', (req, res) => {
+//   res.status(200).send('Server is healthy');
+// });
 
 // Start the server
 app.listen(PORT, () => {
